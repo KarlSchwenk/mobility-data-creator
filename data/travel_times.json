@@ -1,0 +1,42 @@
+{
+  "back_office":
+  {
+    "home": 5100
+  },
+  "grocery":
+  {
+    "home": 360
+  },
+  "home":
+  {
+    "back_office": 4200,
+    "grocery": 360,
+    "orchestra": 1140,
+    "parents": 1440,
+    "swimming": 1500,
+    "work": 1320,
+    "workout": 2100
+  },
+  "orchestra":
+  {
+    "home": 1080
+  },
+  "parents": {
+    "home": 1500
+  },
+  "swimming":
+  {
+    "home": 1380,
+    "work": 660
+  },
+  "work":
+  {
+    "grocery": 1200,
+    "home": 1500,
+    "swimming": 720
+  },
+  "workout":
+  {
+    "home": 1920
+  }
+}
