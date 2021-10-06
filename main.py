@@ -1,25 +1,24 @@
 """Main script to run creation of synthetic trip data."""
 import json
 from datetime import datetime, date
-
+from trip_creation import create_synthetic_data
 # --------------------------------------------------------------------------- #
 # ADJUSTABLE PARAMETERS FOR CREATION OF SYNTHETIC DATA
 # --------------------------------------------------------------------------- #
-from trip_creation import create_synthetic_data
-
+# JSON file containing list of known locations and their GPS locations
 with open("data/known_locations.json", "r") as f:
     KNOWN_LOCATIONS = json.load(f)['data']
 
+# JSON file containing travel time matrix in between known locations
 with open("data/travel_times.json", "r") as f:
     TRAVEL_TIME = json.load(f)
-
 
 # time range of data to create
 START_DATE = datetime(year=2018, month=1, day=1)
 END_DATE = datetime(year=2019, month=12, day=31)
 
 # put scatter on GPS points
-LOCATION_SCATTER = False
+LOCATION_SCATTER = True
 
 # put scatter on start time of trips
 DEPARTURE_TIME_SCATTER = True
