@@ -25,10 +25,9 @@ def create_synthetic_data(known_locations: List[dict],
     df_trips = pd.DataFrame(columns=["gps_start_lat",
                                      "gps_start_lon",
                                      "t_start",
-                                     "t_end"
+                                     "t_end",
                                      "gps_end_lat",
-                                     "gps_end_lon",
-                                     "trip_distance"])
+                                     "gps_end_lon"])
 
     # initialize flag to indicate if monthly trip has been taken
     monthly_trip_taken = False
