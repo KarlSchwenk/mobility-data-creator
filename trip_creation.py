@@ -18,6 +18,30 @@ def create_synthetic_data(known_locations: List[dict],
                           additional_holidays=None,
                           start_date: datetime = datetime(year=2018, month=1, day=1),
                           end_date: datetime = datetime(year=2019, month=12, day=31)) -> pd.DataFrame:
+    """Main logic to create sequence of trips given the passed parameters.
+
+    Args:
+        known_locations:        List of JSON representing locations
+        travel_time_dict:       Matrix (as JSON) for travel times in between locations
+        location_scatter:       Flag to indicate if location scatter should be applied
+        departure_time_scatter: Flag to indicate if departure time scatter should be applied
+        travel_time_scatter:    Flag to indicate if travel time scatter should be applied
+        monthly_trip:           Flag to indicate if monthly trips should be included
+        seasonal_trip:          Flag to indicate if seasonal trips should be included
+        additional_holidays:    Optional list of holidays, e.g. from user's calendar etc.
+        start_date:             First day of relevant time range
+        end_date:               Last day of relevant time range
+
+    Returns:
+        Dataframe containing sequence of trips, one trip per row.
+        Columns:
+            "gps_start_lat":    Latitude of GPS position at start of trip
+            "gps_start_lon":    Longitude of GPS position at start of trip
+            "t_start":          Start time of trip as UTC time code in Milliseconds
+            "t_end":            End time of trip as UTC time code in Milliseconds
+            "gps_end_lat":      Latitude of GPS position at end of trip
+            "gps_end_lon":      Longitude of GPS position at end of trip
+    """
     if additional_holidays is None:
         additional_holidays = []
 
@@ -72,7 +96,8 @@ def create_synthetic_data(known_locations: List[dict],
                                        df=df_trips,
                                        location_scatter=location_scatter,
                                        departure_time_scatter=departure_time_scatter,
-                                       travel_time_scatter=travel_time_scatter, known_locations=known_locations,
+                                       travel_time_scatter=travel_time_scatter,
+                                       known_locations=known_locations,
                                        travel_time_dict=travel_time_dict)
 
                 df_trips = append_trip(start_location='work',
@@ -103,7 +128,8 @@ def create_synthetic_data(known_locations: List[dict],
                                        df=df_trips,
                                        location_scatter=location_scatter,
                                        departure_time_scatter=departure_time_scatter,
-                                       travel_time_scatter=travel_time_scatter, known_locations=known_locations,
+                                       travel_time_scatter=travel_time_scatter,
+                                       known_locations=known_locations,
                                        travel_time_dict=travel_time_dict
                                        )
                 df_trips = append_trip(start_location='swimming',
@@ -112,7 +138,8 @@ def create_synthetic_data(known_locations: List[dict],
                                        df=df_trips,
                                        location_scatter=location_scatter,
                                        departure_time_scatter=departure_time_scatter,
-                                       travel_time_scatter=travel_time_scatter, known_locations=known_locations,
+                                       travel_time_scatter=travel_time_scatter,
+                                       known_locations=known_locations,
                                        travel_time_dict=travel_time_dict
                                        )
             else:
