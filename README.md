@@ -59,7 +59,7 @@ For all contributions that supported this research, many thanks also goes to
 ## Where Can I Contribute? 🤝
 If you find a use case for which the `mobility-data-creator` or the provided data can be helpful, 
 feel free to use it.
-Furthermore, if adaptions of the source code my help to improve this tool, 
+Furthermore, if adaptions of the source code could help to improve this tool, 
 you are more than welcome to open an issue and discuss on how to integrate your suggestions. 
 
 For further questions, please contact [Karl Schwenk](https://github.com/KarlSchwenk).
