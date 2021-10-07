@@ -5,7 +5,7 @@
 Regardless of the means of transportation, 
 individual human mobility is an aspect of our modern society with utmost relevance.
 In order to maintain a mobility system without severe problems or to improve its efficiency and convenience, 
-data-driven services based on mobility data of individual human increasingly gain importance.
+data-driven services based on mobility data of individual humans increasingly gain importance.
 The availability of such data, however, is limited due to data privacy issues.
 This concise tool helps to create synthetic mobility data in a realistic way 
 that can then be used for all kinds of predictive tasks.  
