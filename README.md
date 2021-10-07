@@ -40,7 +40,7 @@ The columns represent the following information:
 
 For the already provided example data, the created raw data points are visualized here:
 ![](data/raw_mobility_data.PNG)
-In addition, the logic of how the sequence of journeys should be appended can be 
+In addition, the logic of how the sequence of journeys is extended can be 
 adapted in [`trip_creation.py`](trip_creation.py).
 
 ---------
