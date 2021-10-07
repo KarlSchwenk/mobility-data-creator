@@ -19,7 +19,7 @@ To run the `mobility-data-creator`, you essentially need to provide
 
 in the [`data`](data) directory. 
 When running the [`main.py`](main.py) script, a [CSV-file](data/synthetic_trip_data.csv) 
-is created containing a sequence of journeys, e.g. taken by car.
+is created containing a sequence of journeys, e.g. trips taken by car.
 The columns represent the following information:
 
 |Name    |Description|
@@ -44,10 +44,10 @@ estimating the parking duration of vehicles, see here.
 Beyond this, however, a variety of further use cases, e.g. predicting the next place to visit, is conceivable.
 For all contributions that supported this research, many thanks also goes to
 
-- [Kaleb Phipps]() (Karlsruhe Institute of Technology)
-- [Benjamin Briegel]() (Mercedes-Benz AG)
-- [Veit Hagenmeyer]() (Karlsruhe Institute of Technology)
-- [Ralf Mikut]() (Karlsruhe Institute of Technology)
+- [Kaleb Phipps](https://github.com/kalebphipps) (Karlsruhe Institute of Technology)
+- [Benjamin Briegel](https://github.com/bbriegel) (Mercedes-Benz AG)
+- [Veit Hagenmeyer](https://www.iai.kit.edu/Ansprechpersonen_1213.php) (Karlsruhe Institute of Technology)
+- [Ralf Mikut](https://www.iai.kit.edu/Ansprechpersonen_1030.php) (Karlsruhe Institute of Technology)
 
 ---------
 ## Where Can I Contribute?
