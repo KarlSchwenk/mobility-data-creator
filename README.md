@@ -58,7 +58,7 @@ For all contributions that supported this research, many thanks also goes to
 ---------
 ## Where Can I Contribute? 🤝
 If you find a use case for which the `mobility-data-creator` or the provided data can be helpful, 
-feel free to use it.
+feel free to use it under the provided [MIT license](https://github.com/KarlSchwenk/mobility-data-creator/blob/main/LICENSE.txt) and make a friendly remark to this [repository](https://github.com/KarlSchwenk/mobility-data-creator/) or its creator [Karl Schwenk](https://github.com/KarlSchwenk).
 Furthermore, if adaptions of the source code could help to improve this tool, 
 you are more than welcome to open an issue and discuss on how to integrate your suggestions. 
 
