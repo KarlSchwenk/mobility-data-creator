@@ -46,7 +46,7 @@ adapted in [`trip_creation.py`](trip_creation.py).
 ---------
 ## For What Can It Be Useful? 🅿️⏲️🚗
 The [data set](data/synthetic_trip_data.csv) presented here was used for a study on 
-estimating the parking duration of vehicles (_COMING SOON:_ Link to scientific paper). <!-- (TODO: add link to paper here!) -->
+estimating the parking duration of vehicles (_COMING SOON:_ Link to scientific paper [^1]). <!-- (TODO: add link to paper here!) -->
 Beyond this, however, a variety of further use cases, e.g. predicting the next place to visit, is conceivable.
 For all contributions that supported this research, many thanks also goes to
 
@@ -63,3 +63,6 @@ Furthermore, if adaptions of the source code could help to improve this tool,
 you are more than welcome to open an issue and discuss on how to integrate your suggestions. 
 
 For further questions, please contact [Karl Schwenk](https://github.com/KarlSchwenk).
+
+--------
+[^1]: Paper was already presented on the *2021 IEEE Symposium Series on Computational Intelligence*; until official publication, it can be requested from [Karl Schwenk](https://github.com/KarlSchwenk).
